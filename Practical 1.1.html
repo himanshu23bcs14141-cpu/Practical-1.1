@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form with HTML5 Validation</title>
+    <style>
+        body 
+            
+        
+        .registration-container {
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 400px;
+        }
+        .registration-container h2 {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .registration-container label {
+            display: block;
+            margin-bottom: 8px;
+            margin-top: 16px;
+        }
+        .registration-container input[type="text"],
+        .registration-container input[type="email"],
+        .registration-container input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .registration-container button {
+            width: 100%;
+            padding: 10px;
+            background: #a72855;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .registration-container button:hover {
+            background: #d31c5c;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <h2>Student Registration</h2>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="50" placeholder="Enter your full name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required min="16" max="100" placeholder="Enter your age">
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
